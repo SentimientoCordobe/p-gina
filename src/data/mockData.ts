@@ -205,6 +205,30 @@ export interface Partido {
 
 export const partidos: Partido[] = [
   {
+    rival: "Andorra",
+    resultado: "1-4",
+    fecha: "2 Mar 2026",
+    youtube: "https://youtu.be/akB_rkJnZVs?si=BmQYrwaPHgDM6Dhs",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2026/03/03/xlarge/4b66fd9f-02b2-4ee7-83b5-2e3b811330c7-223.JPG",
+    local: true,
+  },
+  {
+    rival: "AD Ceuta",
+    resultado: "3-2",
+    fecha: "25 Feb 2026",
+    youtube: "https://youtu.be/Mk1OOQeq7Rg?si=MaYvtn9InmRUJJGE",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2026/02/25/xlarge/8d67db51-1c28-459f-8641-2eca2a7c7da3-727.JPG",
+    local: false,
+  },
+  {
+    rival: "Almería",
+    resultado: "2-1",
+    fecha: "21 Feb 2026",
+    youtube: "https://youtu.be/u9093VFDA5c?si=37-MzzaZMnkIlly5",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2026/02/22/xlarge/58a76d21-096b-431a-abc3-86e65b5e514c-425.JPG",
+    local: false,
+  },
+  {
     rival: "Leganés",
     resultado: "2-1",
     fecha: "14 Feb 2026",
