@@ -10,34 +10,41 @@ export interface Noticia {
 export const noticias: Noticia[] = [
   {
     id: 1,
-    titulo: "El Córdoba se enfrentará al líder de la segunda divisón",
-    resumen: "El Córdoba jugará en casa del Racing de Santander, el líder.",
-    imagen: "https://statics-maker.llt-services.com/rac/images/2026/02/22/xlarge/85c6fb4b-cf11-4cb7-a40d-04d57d3aa0f9-435.jpg",
+    titulo: "Los fallos defensivos vuelven a penalizar al Córdoba",
+    resumen: "Los fallos defensivos nos volvieron a condenar",
+    imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/08/xlarge/75cd27cb-74ae-40d3-8e4f-1248a0b2c1e9-539.jpg",
+    fecha: "9 Mar 2026",
+    destacada: true,
+  },
+  {
+    id: 1,
+    titulo: "Orgullo sin premio en casa del líder",
+    resumen: "El Córdoba planta cara al líder, pero vuelve a caer",
+    imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/08/xlarge/333161dd-1faa-4320-8985-5be1b4121d71-403.jpg",
     fecha: "8 Mar 2026",
     destacada: true,
   },
   {
     id: 2,
-    titulo: "Vamos a volver a tener nuestra oportunidad de meternos y depender de nosotros, no tengo dudas",
-    resumen: "Las palabras de Iván Ania en su rueda de prensa preivia al Racing vs Córdoba",
-    imagen: "https://i.ytimg.com/vi/GXoyIdvd2wo/maxresdefault.jpg",
-    fecha: "7 Mar 2026",
-    destacada: true,
-  },
-  {
-    id: 3,
-    titulo: "Pinchazo del Castellón, Albacete y Málaga",
-    resumen: "Pinchazo de interés cordobesista",
-    imagen: "https://estaticos-cdn.prensaiberica.es/clip/98612b69-79af-43fa-a0ad-200fee609648_alta-libre-aspect-ratio_default_0_x600y267.jpg",
-    fecha: "7 Mar 2026",
+    titulo: "El Córdoba planta cara al Racing, pero vuelve a caer (4-3) ",
+    resumen: "El Córdoba planta cara al Racing, pero vuelve a caer",
+    imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/08/xlarge/52a08d76-280f-4238-bead-07b4b1905e22-299.jpg",
+    fecha: "8 Mar 2026",
     destacada: true,
   },
   {
     id: 4,
-    titulo: "3 derrotas consecutivas que pesan",
-    resumen: "El Córdoba encadena 3 derrotas consecutivas y busca cortar la mala racha cuanto antes",
+    titulo: "4 derrotas consecutivas que pesan",
+    resumen: "El Córdoba encadena su peor racha con Iván Ania al mando",
+    imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/08/xlarge/c0d1be71-9acd-4ea3-bb33-7c44cfc75b30-452.jpg",
+    fecha: "9 Mar 2026",
+  },
+  {
+    id: 4,
+    titulo: "El Arcángel será clave",
+    resumen: "El Arcángel será clave para romper la mala racha ante la Real Sociedad B",
     imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/03/xlarge/e6720434-2fd9-4fbc-aaff-429cf724813d-140.JPG",
-    fecha: "7 Mar 2026",
+    fecha: "9 Mar 2026",
   },
 ];
 
@@ -160,7 +167,7 @@ export const calendario: Jornada[] = [
   { jornada: 26, rival: "Leganés", fecha: "14 Feb 2026", resultado: "2-1", local: true, estado: "victoria" },
   { jornada: 27, rival: "Almería", fecha: "21 Feb 2026", resultado: "2-1", local: false, estado: "derrota" },
   { jornada: 28, rival: "FC Andorra", fecha: "2 Mar 2026", resultado: "1-4", local: true, estado: "derrota" },
-  { jornada: 29, rival: "Racing Santander", fecha: "8 Mar 2026", hora: "18:30", local: false, estado: "pendiente" },
+  { jornada: 29, rival: "Racing Santander", fecha: "8 Mar 2026", resultado: "4-3", local: false, estado: "derrota" },
   { jornada: 30, rival: "Real Sociedad B", fecha: "15 Mar 2026", hora: "14:00", local: true, estado: "pendiente" },
   { jornada: 31, rival: "Burgos CF", fecha: "22 Mar 2026", hora: "18:00", local: false, estado: "pendiente" },
 ];
@@ -176,6 +183,14 @@ export interface Partido {
 }
 
 export const partidos: Partido[] = [
+  {
+    rival: "Racing de Santander",
+    resultado: "4-3",
+    fecha: "8 Mar 2026",
+    youtube: "https://youtu.be/hv5epyCnNZA?si=UlkWfjaPpaEc6Hek",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2026/03/08/xlarge/c1b24824-d4c7-49be-87fd-8a87807adbc5-851.jpg",
+    local: false,
+  },
   {
     rival: "Andorra",
     resultado: "1-4",
