@@ -48,6 +48,7 @@ export default function Index() {
             >
               <ChevronLeft size={20} />
             </button>
+
             <button
               onClick={() => setSlide((s) => (s + 1) % destacadas.length)}
               className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-foreground/40 p-2 text-card backdrop-blur-sm transition-colors hover:bg-secondary"
@@ -62,21 +63,27 @@ export default function Index() {
                 <button
                   key={i}
                   onClick={() => setSlide(i)}
-                  className={`h-2 w-2 rounded-full transition-colors ${i === slide ? "bg-secondary" : "bg-card/50"}`}
+                  className={`h-2 w-2 rounded-full transition-colors ${
+                    i === slide ? "bg-secondary" : "bg-card/50"
+                  }`}
                   aria-label={`Ir a noticia ${i + 1}`}
                 />
               ))}
             </div>
           </section>
 
-          {/* Secondary news grid */}
+          {/* Secondary news */}
           <section>
             <h2 className="mb-4 font-display text-xl font-bold uppercase tracking-wide text-foreground">
               Últimas Noticias
             </h2>
+
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {secundarias.map((n) => (
-                <article key={n.id} className="group overflow-hidden rounded-lg border bg-card shadow-sm transition-shadow hover:shadow-md">
+                <article
+                  key={n.id}
+                  className="group overflow-hidden rounded-lg border bg-card shadow-sm transition-shadow hover:shadow-md"
+                >
                   <div className="aspect-[16/10] overflow-hidden">
                     <img
                       src={n.imagen}
@@ -84,12 +91,15 @@ export default function Index() {
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
+
                   <div className="p-4">
                     <p className="mb-1 text-xs font-semibold text-secondary">{n.fecha}</p>
                     <h3 className="font-display text-base font-bold leading-snug text-card-foreground">
                       {n.titulo}
                     </h3>
-                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{n.resumen}</p>
+                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+                      {n.resumen}
+                    </p>
                   </div>
                 </article>
               ))}
@@ -105,22 +115,26 @@ export default function Index() {
               <h3 className="mb-3 flex items-center gap-2 font-display text-sm font-bold uppercase tracking-wider text-secondary">
                 <Calendar size={16} /> Próximo Partido
               </h3>
+
               <p className="font-display text-lg font-bold">
                 {proximoPartido.local ? "Córdoba CF" : proximoPartido.rival}
                 <span className="mx-2 text-secondary">vs</span>
                 {proximoPartido.local ? proximoPartido.rival : "Córdoba CF"}
               </p>
+
               <p className="mt-1 text-sm text-primary-foreground/70">
-                {proximoPartido.fecha} · {proximoPartido.hora} · {proximoPartido.local ? "Casa" : "Fuera"}
+                {proximoPartido.fecha} · {proximoPartido.hora} ·{" "}
+                {proximoPartido.local ? "Casa" : "Fuera"}
               </p>
             </div>
           )}
 
-          {/* Mini clasificación */}
+          {/* Clasificación */}
           <div className="rounded-lg border bg-card p-5 shadow-sm">
             <h3 className="mb-3 flex items-center gap-2 font-display text-sm font-bold uppercase tracking-wider text-secondary">
               <Trophy size={16} /> Clasificación
             </h3>
+
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b text-xs text-muted-foreground">
@@ -129,9 +143,15 @@ export default function Index() {
                   <th className="py-1 text-right">Pts</th>
                 </tr>
               </thead>
+
               <tbody>
                 {top5.map((e) => (
-                  <tr key={e.posicion} className={`border-b last:border-0 ${e.esCordoba ? "bg-primary/10 font-bold" : ""}`}>
+                  <tr
+                    key={e.posicion}
+                    className={`border-b last:border-0 ${
+                      e.esCordoba ? "bg-primary/10 font-bold" : ""
+                    }`}
+                  >
                     <td className="py-1.5">{e.posicion}</td>
                     <td className="py-1.5">{e.equipo}</td>
                     <td className="py-1.5 text-right font-bold">{e.puntos}</td>
@@ -141,7 +161,7 @@ export default function Index() {
             </table>
           </div>
 
-          {/* Social */}
+          {/* Redes Sociales */}
           <div className="rounded-lg border bg-card p-5 shadow-sm">
             <h3 className="mb-3 font-display text-sm font-bold uppercase tracking-wider text-secondary">
               Redes Sociales
@@ -154,23 +174,21 @@ export default function Index() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:text-secondary"
-                  aria-label="Abrir X - Sent_Cordobe (se abre en pestaña nueva)"
                 >
-                  <FaTwitter size={18} aria-hidden="true" />
+                  <FaTwitter size={18} />
                   <span className="underline">@Sent_Cordobe</span>
                 </a>
               </p>
 
               <p>
                 <a
-                  href="https://www.instagram.com/sentimiento_cordobe/?hl=es"
+                  href="https://www.instagram.com/sentimiento_cordobe/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:text-secondary"
-                  aria-label="Abrir Instagram - sentimientocordobe (se abre en pestaña nueva)"
                 >
-                  <FaInstagram size={18} aria-hidden="true" />
-                  <span className="underline">@sentimientocordobe</span>
+                  <FaInstagram size={18} />
+                  <span className="underline">@sentimiento_cordobe</span>
                 </a>
               </p>
 
@@ -180,10 +198,29 @@ export default function Index() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:text-secondary"
-                  aria-label="Abrir YouTube - Sentimiento Cordobé (se abre en pestaña nueva)"
                 >
-                  <FaYoutube size={18} aria-hidden="true" />
+                  <FaYoutube size={18} />
                   <span className="underline">Sentimiento Cordobé</span>
+                </a>
+              </p>
+
+              <p>
+                <a
+                  href="https://www.tiktok.com/@sentimiento_cordobe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-secondary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9 3v12.5a3.5 3.5 0 1 1-3.5-3.5h1V9h-1A6.5 6.5 0 1 0 12 15.5V8.8c1.1.9 2.5 1.4 4 1.4V7.2c-1.2 0-2.3-.5-3.1-1.3A4.5 4.5 0 0 1 11.5 3H9z"/>
+                  </svg>
+                  <span className="underline">@sentimiento_cordobe</span>
                 </a>
               </p>
             </div>
