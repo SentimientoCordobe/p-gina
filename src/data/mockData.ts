@@ -112,12 +112,12 @@ export const clasificacion: EquipoClasificacion[] = [
   { posicion: 14, equipo: "Albacete", puntos: 36, pj: 29, pg: 9, pe: 9, pp: 11, gf: 33, gc: 39, dg: -6 },
   { posicion: 15, equipo: "Granada", puntos: 35, pj: 29, pg: 8, pe: 11, pp: 10, gf: 34, gc: 33, dg: 1 },
   { posicion: 16, equipo: "Cádiz", puntos: 35, pj: 29, pg: 9, pe: 8, pp: 12, gf: 29, gc: 36, dg: -7 },
-  { posicion: 17, equipo: "Granada", puntos: 32, pj: 28, pg: 7, pe: 11, pp: 10, gf: 32, gc: 33, dg: -1 },
-  { posicion: 18, equipo: "Valladolid", puntos: 32, pj: 28, pg: 8, pe: 8, pp: 12, gf: 29, gc: 38, dg: -9 },
-  { posicion: 19, equipo: "Huesca", puntos: 30, pj: 28, pg: 8, pe: 6, pp: 14, gf: 26, gc: 37, dg: -11 },
+  { posicion: 17, equipo: "Leganés", puntos: 34, pj: 29, pg: 8, pe: 10, pp: 11, gf: 29, gc: 29, dg: 0 },
+  { posicion: 18, equipo: "Valladolid", puntos: 33, pj: 29, pg: 8, pe: 9, pp: 12, gf: 32, gc: 41, dg: -9 },
+  { posicion: 19, equipo: "Huesca", puntos: 31, pj: 29, pg: 8, pe: 7, pp: 14, gf: 26, gc: 37, dg: -11 },
   { posicion: 20, equipo: "Cultural Leonesa", puntos: 27, pj: 28, pg: 7, pe: 6, pp: 15, gf: 27, gc: 44, dg: -17 },
   { posicion: 21, equipo: "Zaragoza", puntos: 27, pj: 29, pg: 6, pe: 9, pp: 14, gf: 24, gc: 41, dg: -17 },
-  { posicion: 22, equipo: "Mirandés", puntos: 24, pj: 28, pg: 6, pe: 6, pp: 16, gf: 28, gc: 45, dg:-17 },
+  { posicion: 22, equipo: "Mirandés", puntos: 24, pj: 29, pg: 6, pe: 6, pp: 17, gf: 28, gc: 47, dg:-19 },
 ];
 
 // ── Calendario del Córdoba CF (temporada 2025/26) ──
