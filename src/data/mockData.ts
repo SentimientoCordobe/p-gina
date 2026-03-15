@@ -51,7 +51,7 @@ export const noticias: Noticia[] = [
   },
   {
     id: 5,
-    slug: "4 derrotas consecutivas que pesan",
+    slug: "5",
     titulo: "El Arcángel será clave",
     resumen: "El Arcángel será clave para romper la mala racha ante la Real Sociedad B",
     imagen: "https://statics-maker.llt-services.com/cor/images/2026/03/03/xlarge/e6720434-2fd9-4fbc-aaff-429cf724813d-140.JPG",
