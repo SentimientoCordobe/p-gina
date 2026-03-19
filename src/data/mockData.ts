@@ -77,7 +77,9 @@ A pesar del resultado, el equipo mostró capacidad ofensiva y espíritu competit
 
 El equipo ha encadenado cuatro derrotas consecutivas, algo que no había ocurrido desde la llegada de Iván Ania al banquillo blanquiverde.
 
-Los resultados han frenado la progresión del equipo en la clasificación y obligan al conjunto cordobesista a reaccionar cuanto antes para recuperar sensaciones y volver a sumar puntos.`,
+Los resultados han frenado la progresión del equipo en la clasificación 
+
+y obligan al conjunto cordobesista a reaccionar cuanto antes para recuperar sensaciones y volver a sumar puntos.`,
   },
   {
     id: 5,
