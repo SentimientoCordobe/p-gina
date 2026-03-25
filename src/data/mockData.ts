@@ -245,6 +245,14 @@ export const partidos: Partido[] = [
     local: false,
   },
   {
+    rival: "Burgos CF",
+    resultado: "4-0",
+    fecha: "22 Mar 2026",
+    youtube: "https://www.youtube.com/watch?v=YL2fOS05_0s",
+    miniatura: "https://static.eldiario.es/clip/6b86f50b-76ab-427c-b0e5-927a9f93f7f2_16-9-discover-aspect-ratio_default_0.jpg",
+    local: true,
+  },
+  {
     rival: "Real Sociedad B",
     resultado: "0-2",
     fecha: "15 Mar 2026",
