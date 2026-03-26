@@ -8,6 +8,7 @@ const navLinks = [
   { to: "/clasificacion", label: "Clasificación" },
   { to: "/calendario", label: "Calendario" },
   { to: "/partidos", label: "Partidos" },
+  { to: "/videos", label: "Videos" },
   { to: "/tienda", label: "Tienda" },
 ];
 

@@ -13,6 +13,7 @@ import Partidos from "./pages/Partidos";
 import Tienda from "./pages/Tienda";
 import NotFound from "./pages/NotFound";
 import Noticia from "./pages/Noticia";
+import Videos from "./pages/Videos";
 
 
 const queryClient = new QueryClient();
@@ -32,8 +33,8 @@ const App = () => (
             <Route path="/calendario" element={<Calendario />} />
             <Route path="/partidos" element={<Partidos />} />
             <Route path="/tienda" element={<Tienda />} />
-             <Route path="/noticias/:slug" element={<Noticia />} />
-
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/noticias/:slug" element={<Noticia />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -28,7 +28,7 @@ export default function Footer() {
               Secciones
             </h4>
 
-            {["Plantilla", "Clasificación", "Calendario", "Partidos", "Tienda"].map((s) => (
+            {["Plantilla", "Clasificación", "Calendario", "Partidos", "Videos", "Tienda"].map((s) => (
               <Link
                 key={s}
                 to={`/${s
