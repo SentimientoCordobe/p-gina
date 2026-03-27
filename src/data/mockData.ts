@@ -17,7 +17,7 @@ export const noticias: Noticia[] = [
     resumen:
       "Dia de partido. Córdoba-Mirandés. Liga Hypermothion (Jornada 32) 19:00.",
     imagen: "https://s1.abcstatics.com/abc/www/multimedia/espana/2025/12/21/cordobacf-mirandes-partido-RSTxBp6tcIc0YhbCtGnjPdJ-1200x840@diario_abc.jpeg",
-    fecha: "26 Mar 2026",
+    fecha: "27 Mar 2026",
     contenido: `Así está el cara a cara ante el Mirandés. El Córdoba CF todavía no sabe lo que es ganar al Mirandés en El Arcángel.
 🔢 Balance total en casa: dos empates y tres victorias visitantes en los cinco partidos disputados en el estadio cordobés.`,
     destacada: true,
